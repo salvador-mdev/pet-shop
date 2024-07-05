@@ -1,0 +1,171 @@
+.header {
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .logo {
+    margin: 0 20px;
+}
+
+.header .container .logo {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.container .logo:hover {
+    color: var(--cor-primaria);
+}
+
+.container a {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.container .fas.fa-store {
+    color: var(--cor-primaria);
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+}
+
+.container ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 25px;
+    padding: 20px 5px;
+    color: #000;
+    transition: all ease 0.3s;
+}
+
+.container > nav > ul > li {
+    position: relative;
+}
+
+.container ul li .home:hover,
+.container ul li .sobre:hover,
+.container ul li .servicos:hover,
+.container ul li .produtos:hover,
+.container ul li .paginas:hover {
+    transform: scale(1.1);
+    background-color: var(--cor-primaria);
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.container ul li .contato {
+    padding: 22px 0 22px 48px;
+    background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-left: 35px;
+    transition: ease 0.3s;
+}
+
+.container ul li .contato:hover{
+    transform: scale(1.1);
+}
+
+.container ul li .contato::after {
+    content: url(../images/long-arrow-alt-right-solid.svg);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    margin: 0 48px 3px 0;
+}
+
+.header .container nav ul li #home{
+    color: var(--cor-primaria);
+}
+
+.header .container nav ul li #home:hover {
+    color: #fff;
+}
+
+/* SUB-MENU */
+
+.container ul li ul {
+    width: 130px;
+    height: 140px;
+    border: white 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    left: 2px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.container ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+.container ul li ul:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    position: absolute;
+    top: -12px;
+    left: 50px;
+}
+
+.container nav ul li ul li a {
+    margin-left: 0;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.container nav ul li ul .submenu1 {
+    padding: 10px 20px;
+}
+
+.container nav ul li ul .submenu2 {
+    padding: 10px 18px;
+}
+
+.container nav ul li ul .submenu3 {
+    padding: 10px 12px;
+}
+
+.container nav ul li ul li a:hover {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+.hero .container {
+    width: 100%;
+    height: 800px;
+    background-color: beige;
+}

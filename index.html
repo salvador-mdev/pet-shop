@@ -3,13 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet Shop</title>
+    
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/hero.css">
+    <link rel="stylesheet" href="src/css/about.css">
+    <link rel="stylesheet" href="src/css/gallery.css">
+    <link rel="stylesheet" href="src/css/services.css">
+    <link rel="stylesheet" href="src/css/testimonials.css">
+    <link rel="stylesheet" href="src/css/contato-maps.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, ut omnis! Dolorum minus corporis ad eaque cum et vero sequi eveniet perspiciatis fugiat, deserunt quas atque, impedit, harum labore iusto.</p>
+    <header class="header" id="home">
+        <div class="container">
+            <a href="#"">
+                <i class="fas fa-store"></i>
+                <h1 class="logo">PET SHOP</h1>
+            </a>
+
+            <nav>
+                <input type="checkbox" id="menu-hamburguer">
+
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                
+                <ul>
+                    <li><a href="#home" id="home" class="home">Home</a></li>
+                    <li><a href="#sobre" class="sobre">Sobre nos</a></li>
+                    <li><a href="#servicos" class="servicos">Serviços</a></li>
+                    <li><a href="#produtos" class="produtos">Produtos</a></li>
+                    <li><a href="#paginas" class="paginas">Paginas</a>
+                        <ul>
+                            <li><a href="#" class="submenu1">Consultas</a></li>
+                            <li><a href="#" class="submenu2">Nosso Time</a></li>
+                            <li><a href="#" class="submenu3">Depoimentos</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li><a href="#contato" class="contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <section class="hero">
+        <div class="container"></div>
+    </section>
 </body>
 </html>
