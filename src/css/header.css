@@ -1,6 +1,6 @@
 .header {
     background-color: #fff;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 100%;
 }
 
@@ -34,6 +34,7 @@
 
 .container .fas.fa-store {
     color: var(--cor-primaria);
+    font-size: 35px;
 }
 
 .container ul {
@@ -113,7 +114,7 @@
     opacity: 0;
     background-color: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    z-index: 1;
     transition: all 0.3s ease;
 }
 
@@ -160,12 +161,90 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1200px) {
+    .container .fas.fa-store {
+        font-size: 30px;
+    }
 
+    .header .container .logo {
+        font-size: 30px;
+    }
 
+    .container ul li a {
+        font-size: 15px;
+    }
+}
 
+@media (max-width: 1000px) {
+    .container .fas.fa-store {
+        font-size: 28px;
+    }
+    
+    .header .container .logo {
+        font-size: 28px;
+    }
 
-.hero .container {
-    width: 100%;
-    height: 800px;
-    background-color: beige;
+    .container ul li a {
+        font-size: 13px;
+    }
+
+    .container nav ul li ul li a {
+        font-size: 10px;
+    }
+
+    .container ul li ul {
+        width: 110px;
+        left: 5px;
+    }
+
+    .container ul li ul:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid #fff;
+        position: absolute;
+        top: -12px;
+        left: 45px;
+    }
+
+    .container nav ul li ul .submenu1 {
+        padding: 10px 22px;
+    }
+    
+    .container nav ul li ul .submenu2 {
+        padding: 10px 21px;
+    }
+    
+    .container nav ul li ul .submenu3 {
+        padding: 10px 15px;
+    }
+
+    .container ul li .contato {
+        padding: 17px 0 17px 42px;
+    }
+}
+
+@media (max-width: 930px) {
+    .header .container .logo {
+        margin: 0 15px;
+    }
+    .container .fas.fa-store {
+        font-size: 25px;
+    }
+
+    .header .container .logo {
+        font-size: 25px;
+    }
+
+    .container ul li a {
+        margin-left: 22px;
+        font-size: 13px;
+    }
+
+    .container ul li .contato {
+        margin-left: 27px;
+        padding: 15px 0 15px 38px
+    }
 }
