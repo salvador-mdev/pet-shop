@@ -1,8 +1,7 @@
 .about .container {
     display: flex;
     width: 100%;
-    padding: 48px 12px;
-    margin: 0 10px;
+    padding: 48px 22px;
 }
 
 .about .container .image {
@@ -78,6 +77,7 @@
     margin-bottom: 10px;
     padding: 8px 8px;
     text-align: justify;
+    color: #656565;
 }
 
 @media (max-width: 1060px) {
