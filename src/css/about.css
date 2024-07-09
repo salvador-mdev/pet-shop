@@ -1,0 +1,139 @@
+.about .container {
+    display: flex;
+    width: 100%;
+    padding: 48px 12px;
+    margin: 0 10px;
+}
+
+.about .container .image {
+    width: 362px;
+    height: 570px;
+    background: url(../images/about.jpg) center no-repeat;
+    background-size: cover;
+    margin: 0 50px 0 80px;
+}
+
+.about .container .informacoes {
+    width: 50%;
+}
+
+.about .container .informacoes .titulos {
+    margin-bottom: 43px;
+    padding-left: 48px;
+    border-left: 5px solid var(--cor-primaria);
+}
+
+.about .container .informacoes .titulos h2:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+}
+
+.about .container .informacoes .titulos h2:last-child {
+    font-size: 47px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.about .container .informacoes .mision,
+.about .container .informacoes .vision {
+    background-color: #F3F3F3;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.about .container .informacoes .mision:hover {
+    background-color: var(--cor-terciaria);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.about .container .informacoes .mision:hover h3 {
+    color: #000;
+}
+
+.about .container .informacoes .vision:hover {
+    background-color: var(--cor-terciaria);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.about .container .informacoes .vision:hover h3 {
+    color: #000;
+}
+
+.about .container .informacoes .mision h3,
+.about .container .informacoes .vision h3 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+    padding: 8px 16px;
+}
+
+.about .container .informacoes .mision p,
+.about .container .informacoes .vision p {
+    margin-bottom: 10px;
+    padding: 8px 8px;
+    text-align: justify;
+}
+
+@media (max-width: 1060px) {
+    .about {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 850px;
+        padding: 48px 12px;
+    }
+
+    .about .container .image {
+        width: 100%;
+        background: url(../images/about.jpg) cover;
+        margin: 0 0 30px 0;
+    }
+
+    .about .container .informacoes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 850px;
+        padding: 40px 12px;
+    }
+    
+    .about .container .informacoes .titulos h2:last-child {
+        font-size: 35px;
+    }
+
+    .about .container .informacoes .titulos {
+        padding-left: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 850px;
+        padding: 35px 12px;
+    }
+    
+    .about .container .informacoes .titulos {
+        padding-left: 25px;
+    }
+
+    .about .container .informacoes .titulos h2:last-child {
+        font-size: 30px;
+    }
+}
