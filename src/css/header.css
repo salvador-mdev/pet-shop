@@ -1,6 +1,9 @@
+body {
+    padding-top: 59px;
+}
+
 .header {
     background-color: #fff;
-    /* border: 1px solid #000; */
     width: 100%;
 }
 
@@ -8,6 +11,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background-color: #fff;
 }
 
 .header .container .logo {
@@ -47,7 +55,7 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-left: 25px;
-    padding: 20px 5px;
+    padding: 18px 5px;
     color: #000;
     transition: all ease 0.3s;
 }
@@ -68,7 +76,7 @@
 }
 
 .container ul li .contato {
-    padding: 22px 0 22px 48px;
+    padding: 18px 0 18px 48px;
     background-color: var(--cor-primaria);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     color: white;
@@ -176,6 +184,10 @@
 }
 
 @media (max-width: 1000px) {
+    body {
+        padding-top: 57x;
+    }
+    
     .container .fas.fa-store {
         font-size: 28px;
     }
@@ -185,7 +197,9 @@
     }
 
     .container ul li a {
-        font-size: 13px;
+        font-size: 15px;
+        padding: 17px 5px;
+        margin-left: 16px;
     }
 
     .container nav ul li ul li a {
@@ -227,6 +241,10 @@
 }
 
 @media (max-width: 930px) {
+    body {
+        padding-top: 49px;
+    }
+    
     .header .container .logo {
         margin: 0 15px;
     }
@@ -239,12 +257,13 @@
     }
 
     .container ul li a {
-        margin-left: 22px;
+        margin-left: 16px;
         font-size: 13px;
+        padding: 14px 5px;
     }
 
     .container ul li .contato {
         margin-left: 27px;
-        padding: 15px 0 15px 38px
+        padding: 13px 0 13px 38px
     }
 }
