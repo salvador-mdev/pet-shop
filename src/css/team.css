@@ -1,0 +1,829 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-tablet, .team-mobile {
+    display: none;
+}
+
+.team .container-team .titulo {
+    margin: 48px 0;
+}
+
+.team .container-team .titulo {
+    max-width: 550px;
+    margin-bottom: 48px;
+    padding-left: 48px;
+    border-left: 5px solid var(--cor-primaria);
+}
+
+.team .container-team .titulo h2:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+}
+
+.team .container-team .titulo h2:last-child {
+    font-size: 47px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.team .container-team {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 40px 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team ul {
+    display: flex;
+    padding: 0 0 50px 0;
+    width: 500%;
+    animation: slide2 30s infinite alternate ease-in-out;
+}
+
+.team ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.team .product-1,
+.team .product-2,
+.team .product-3,
+.team .product-4,
+.team .product-5 {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.team .product-1 {
+    background: url(../images/team-1.jpg) center;
+    background-size: cover;
+}
+
+.team .product-2 {
+    background: url(../images/team-2.jpg) center;
+    background-size: cover;
+}
+.team .product-3 {
+    background: url(../images/team-3.jpg) center;
+    background-size: cover;
+}
+.team .product-4 {
+    background: url(../images/team-4.jpg) center;
+    background-size: cover;
+}
+
+.team .product-5 {
+    background: url(../images/team-5.jpg) center;
+    background-size: cover;
+}
+
+@keyframes slide2 {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: -100%;
+    }
+
+    40% {
+        margin-left: -100%;
+    }
+
+    40% {
+        margin-left: -200%;
+    }
+
+    60% {
+        margin-left: -200%;
+    }
+
+    60% {
+        margin-left: -300%;
+    }
+
+    80% {
+        margin-left: -300%;
+    }
+
+    80% {
+        margin-left: -400%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
+}
+
+.team .productos-carrousel-1,
+.team .productos-carrousel-2,
+.team .productos-carrousel-3,
+.team .productos-carrousel-4,
+.team .productos-carrousel-5 {
+    display: flex;
+}
+
+
+.team .productos-carrousel-1 .producto-2,
+.team .productos-carrousel-2 .producto-5,
+.team .productos-carrousel-3 .producto-3,
+.team .productos-carrousel-4 .producto-1,
+.team .productos-carrousel-5 .producto-4 {
+    margin: 0 50px;
+}
+
+.team .producto-1,
+.team .producto-2,
+.team .producto-3,
+.team .producto-4,
+.team .producto-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.team .producto-1:hover,
+.team .producto-2:hover,
+.team .producto-3:hover,
+.team .producto-4:hover,
+.team .producto-5:hover {
+    transform: scale(1.1);
+}
+
+.team .producto-1:hover h3,
+.team .producto-2:hover h3,
+.team .producto-3:hover h3,
+.team .producto-4:hover h3,
+.team .producto-5:hover h3 {
+    color: var(--cor-primaria);
+}
+
+.team .producto-1 .product-1,
+.team .producto-2 .product-2,
+.team .producto-3 .product-3,
+.team .producto-4 .product-4,
+.team .producto-5 .product-5 {
+    margin-bottom: 24px;
+}
+
+.team .producto-1 h3,
+.team .producto-2 h3,
+.team .producto-3 h3,
+.team .producto-4 h3,
+.team .producto-5 h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.team .producto-1 p,
+.team .producto-2 p,
+.team .producto-3 p,
+.team .producto-4 p,
+.team .producto-5 p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #656565;
+}
+
+.team .redes {
+    display: flex;
+    max-width: 90px;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.team .redes .fab.fa-facebook-square {
+    color: blue;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.team .redes .fab.fa-instagram {
+    color: rgb(255, 0, 149);
+    padding: 0 15px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.team .redes .fas.fa-envelope {
+    color: rgba(218, 23, 23, 0.719);
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.team .redes .fab.fa-facebook-square:hover,
+.team .redes .fab.fa-instagram:hover,
+.team .redes .fas.fa-envelope:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1440px) {
+    .team .product-1,
+    .team .product-2,
+    .team .product-3,
+    .team .product-4,
+    .team .product-5 {
+        min-width: 225px;
+        min-height: 225px;
+    }
+
+    .team .productos-carrousel-1 .producto-2,
+    .team .productos-carrousel-2 .producto-5,
+    .team .productos-carrousel-3 .producto-3,
+    .team .productos-carrousel-4 .producto-1,
+    .team .productos-carrousel-5 .producto-4 {
+        margin: 0 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .team .product-1,
+    .team .product-2,
+    .team .product-3,
+    .team .product-4,
+    .team .product-5 {
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 950px) {
+    .team .container-team {
+        margin: 40px 80px;
+    }
+}
+
+/* CSS ESPECIAL PARA VERSION TABLET */
+
+@media (max-width: 900px) {
+    .team {
+        display: none;
+    }
+    
+    .team-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .team-tablet .container-team .titulo {
+        margin: 48px 0;
+    }
+    
+    .team-tablet .container-team .titulo {
+        max-width: 550px;
+        margin-bottom: 48px;
+        padding-left: 48px;
+        border-left: 5px solid var(--cor-primaria);
+    }
+    
+    .team-tablet .container-team .titulo h2:first-child {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: var(--cor-primaria);
+    }
+    
+    .team-tablet .container-team .titulo h2:last-child {
+        font-size: 47px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: #000;
+    }
+    
+    .team-tablet .container-team {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 40px 80px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .team-tablet ul {
+        display: flex;
+        padding: 0 0 50px 0;
+        width: 500%;
+        animation: slide2 30s infinite alternate ease-in-out;
+    }
+    
+    .team-tablet ul li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+    
+    .team-tablet .product-1,
+    .team-tablet .product-2,
+    .team-tablet .product-3,
+    .team-tablet .product-4,
+    .team-tablet .product-5 {
+        min-width: 225px;
+        min-height: 225px;
+    }
+    
+    .team-tablet .product-1 {
+        background: url(../images/team-1.jpg) center;
+        background-size: cover;
+    }
+    
+    .team-tablet .product-2 {
+        background: url(../images/team-2.jpg) center;
+        background-size: cover;
+    }
+    .team-tablet .product-3 {
+        background: url(../images/team-3.jpg) center;
+        background-size: cover;
+    }
+    .team-tablet .product-4 {
+        background: url(../images/team-4.jpg) center;
+        background-size: cover;
+    }
+    
+    .team-tablet .product-5 {
+        background: url(../images/team-5.jpg) center;
+        background-size: cover;
+    }
+    
+    @keyframes slide2 {
+        0% {
+            margin-left: 0;
+        }
+    
+        20% {
+            margin-left: 0;
+        }
+    
+        20% {
+            margin-left: -100%;
+        }
+    
+        40% {
+            margin-left: -100%;
+        }
+    
+        40% {
+            margin-left: -200%;
+        }
+    
+        60% {
+            margin-left: -200%;
+        }
+    
+        60% {
+            margin-left: -300%;
+        }
+    
+        80% {
+            margin-left: -300%;
+        }
+    
+        80% {
+            margin-left: -400%;
+        }
+    
+        100% {
+            margin-left: -400%;
+        }
+    }
+    
+    .team-tablet .productos-carrousel-1,
+    .team-tablet .productos-carrousel-2,
+    .team-tablet .productos-carrousel-3,
+    .team-tablet .productos-carrousel-4,
+    .team-tablet .productos-carrousel-5 {
+        display: flex;
+    }
+        
+    .team-tablet .producto-1,
+    .team-tablet .producto-2,
+    .team-tablet .producto-3,
+    .team-tablet .producto-4,
+    .team-tablet .producto-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5f5;
+        margin: 0 20px;
+        padding: 0;
+        position: relative;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+    
+    .team-tablet .producto-1:hover,
+    .team-tablet .producto-2:hover,
+    .team-tablet .producto-3:hover,
+    .team-tablet .producto-4:hover,
+    .team-tablet .producto-5:hover {
+        transform: scale(1.1);
+    }
+    
+    .team-tablet .producto-1:hover h3,
+    .team-tablet .producto-2:hover h3,
+    .team-tablet .producto-3:hover h3,
+    .team-tablet .producto-4:hover h3,
+    .team-tablet .producto-5:hover h3 {
+        color: var(--cor-primaria);
+    }
+    
+    .team-tablet .producto-1 .product-1,
+    .team-tablet .producto-2 .product-2,
+    .team-tablet .producto-3 .product-3,
+    .team-tablet .producto-4 .product-4,
+    .team-tablet .producto-5 .product-5 {
+        margin-bottom: 24px;
+    }
+    
+    .team-tablet .producto-1 h3,
+    .team-tablet .producto-2 h3,
+    .team-tablet .producto-3 h3,
+    .team-tablet .producto-4 h3,
+    .team-tablet .producto-5 h3 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #212121;
+    }
+    
+    .team-tablet .producto-1 p,
+    .team-tablet .producto-2 p,
+    .team-tablet .producto-3 p,
+    .team-tablet .producto-4 p,
+    .team-tablet .producto-5 p {
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #656565;
+    }
+    
+    .team-tablet .redes {
+        display: flex;
+        max-width: 90px;
+        height: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .team-tablet .redes .fab.fa-facebook-square {
+        color: blue;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    .team-tablet .redes .fab.fa-instagram {
+        color: rgb(255, 0, 149);
+        padding: 0 15px;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .team-tablet .redes .fas.fa-envelope {
+        color: rgba(218, 23, 23, 0.719);
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .team-tablet .redes .fab.fa-facebook-square:hover,
+    .team-tablet .redes .fab.fa-instagram:hover,
+    .team-tablet .redes .fas.fa-envelope:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 750px) {
+    .team-tablet .container-team .titulo {
+        margin: 35px 0;
+    }
+
+    .team-tablet .container-team .titulo h2:last-child {
+        font-size: 35px;
+    }
+
+    .team-tablet .producto-1,
+    .team-tablet .producto-2,
+    .team-tablet .producto-3,
+    .team-tablet .producto-4,
+    .team-tablet .producto-5 {
+        margin: 0 15px;
+    }
+
+    .team-tablet .product-1,
+    .team-tablet .product-2,
+    .team-tablet .product-3,
+    .team-tablet .product-4,
+    .team-tablet .product-5 {
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
+
+/* CSS ESPECIAL PARA VERSION MOBILE */
+
+@media (max-width: 700px) {
+    .team-tablet {
+        display: none;
+    }
+
+    .team-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .team-mobile .container-team .titulo {
+        margin: 48px 0;
+    }
+    
+    .team-mobile .container-team .titulo {
+        max-width: 550px;
+        margin-bottom: 48px;
+        padding-left: 48px;
+        border-left: 5px solid var(--cor-primaria);
+    }
+    
+    .team-mobile .container-team .titulo h2:first-child {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: var(--cor-primaria);
+    }
+    
+    .team-mobile .container-team .titulo h2:last-child {
+        font-size: 47px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: #000;
+    }
+    
+    .team-mobile .container-team {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 40px 50px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .team-mobile ul {
+        display: flex;
+        padding: 0 0 50px 0;
+        width: 500%;
+        animation: slide2 30s infinite alternate ease-in-out;
+    }
+    
+    .team-mobile ul li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+    
+    .team-mobile .product-1,
+    .team-mobile .product-2,
+    .team-mobile .product-3,
+    .team-mobile .product-4,
+    .team-mobile .product-5 {
+        min-width: 240px;
+        min-height: 240px;
+    }
+    
+    .team-mobile .product-1 {
+        background: url(../images/team-1.jpg) center;
+        background-size: cover;
+    }
+    
+    .team-mobile .product-2 {
+        background: url(../images/team-2.jpg) center;
+        background-size: cover;
+    }
+    .team-mobile .product-3 {
+        background: url(../images/team-3.jpg) center;
+        background-size: cover;
+    }
+    .team-mobile .product-4 {
+        background: url(../images/team-4.jpg) center;
+        background-size: cover;
+    }
+    
+    .team-mobile .product-5 {
+        background: url(../images/team-5.jpg) center;
+        background-size: cover;
+    }
+    
+    @keyframes slide2 {
+        0% {
+            margin-left: 0;
+        }
+    
+        20% {
+            margin-left: 0;
+        }
+    
+        20% {
+            margin-left: -100%;
+        }
+    
+        40% {
+            margin-left: -100%;
+        }
+    
+        40% {
+            margin-left: -200%;
+        }
+    
+        60% {
+            margin-left: -200%;
+        }
+    
+        60% {
+            margin-left: -300%;
+        }
+    
+        80% {
+            margin-left: -300%;
+        }
+    
+        80% {
+            margin-left: -400%;
+        }
+    
+        100% {
+            margin-left: -400%;
+        }
+    }
+    
+    .team-mobile .productos-carrousel-1,
+    .team-mobile .productos-carrousel-2,
+    .team-mobile .productos-carrousel-3,
+    .team-mobile .productos-carrousel-4,
+    .team-mobile .productos-carrousel-5 {
+        display: flex;
+    }
+        
+    .team-mobile .producto-1,
+    .team-mobile .producto-2,
+    .team-mobile .producto-3,
+    .team-mobile .producto-4,
+    .team-mobile .producto-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5f5;
+        margin: 0 20px;
+        padding: 0;
+        position: relative;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+    
+    .team-mobile .producto-1:hover,
+    .team-mobile .producto-2:hover,
+    .team-mobile .producto-3:hover,
+    .team-mobile .producto-4:hover,
+    .team-mobile .producto-5:hover {
+        transform: scale(1.1);
+    }
+    
+    .team-mobile .producto-1:hover h3,
+    .team-mobile .producto-2:hover h3,
+    .team-mobile .producto-3:hover h3,
+    .team-mobile .producto-4:hover h3,
+    .team-mobile .producto-5:hover h3 {
+        color: var(--cor-primaria);
+    }
+    
+    .team-mobile .producto-1 .product-1,
+    .team-mobile .producto-2 .product-2,
+    .team-mobile .producto-3 .product-3,
+    .team-mobile .producto-4 .product-4,
+    .team-mobile .producto-5 .product-5 {
+        margin-bottom: 24px;
+    }
+    
+    .team-mobile .producto-1 h3,
+    .team-mobile .producto-2 h3,
+    .team-mobile .producto-3 h3,
+    .team-mobile .producto-4 h3,
+    .team-mobile .producto-5 h3 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #212121;
+    }
+    
+    .team-mobile .producto-1 p,
+    .team-mobile .producto-2 p,
+    .team-mobile .producto-3 p,
+    .team-mobile .producto-4 p,
+    .team-mobile .producto-5 p {
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #656565;
+    }
+    
+    .team-mobile .redes {
+        display: flex;
+        max-width: 90px;
+        height: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .team-mobile .redes .fab.fa-facebook-square {
+        color: blue;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    .team-mobile .redes .fab.fa-instagram {
+        color: rgb(255, 0, 149);
+        padding: 0 15px;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .team-mobile .redes .fas.fa-envelope {
+        color: rgba(218, 23, 23, 0.719);
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .team-mobile .redes .fab.fa-facebook-square:hover,
+    .team-mobile .redes .fab.fa-instagram:hover,
+    .team-mobile .redes .fas.fa-envelope:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 600px) {
+    .team-mobile .container-team {
+        margin: 40px 35px;
+    }
+}
+
+@media (max-width: 550px) {
+    .team-mobile .container-team .titulo h2:last-child {
+        font-size: 35px;
+    }
+
+    .team-mobile .container-team .titulo {
+        padding-left: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .team-mobile .container-team {
+        margin: 40px 35px;
+    }
+
+    .team-mobile .container-team .titulo {
+        padding-left: 24px;
+        margin: 35px 0;
+    }
+
+    .team-mobile .container-team .titulo h2:last-child {
+        font-size: 25px;
+    }
+
+    .team-mobile .product-1,
+    .team-mobile .product-2,
+    .team-mobile .product-3,
+    .team-mobile .product-4,
+    .team-mobile .product-5 {
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
