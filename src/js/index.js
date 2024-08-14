@@ -47,21 +47,21 @@ window.sr = ScrollReveal();
     distance: '-300px'
   });
 
-  sr.reveal('.about-animation .informacoes .titulos', {
-    duration: 4000,
-    origin: 'left',
-    distance: '-300px'
-  });
+  // sr.reveal('.about-animation .informacoes .titulos', {
+  //   duration: 4000,
+  //   origin: 'left',
+  //   distance: '-300px'
+  // });
 
   sr.reveal('.mision', {
     duration: 4500,
-    origin: 'left',
+    origin: 'top',
     distance: '-350px'
   });
 
   sr.reveal('.vision', {
     duration: 5000,
-    origin: 'left',
+    origin: 'top',
     distance: '-400px'
   });
 
@@ -79,37 +79,37 @@ window.sr = ScrollReveal();
 
   sr.reveal('.card-1', {
     duration: 3000,
-    origin: 'rigth',
+    origin: 'top',
     distance: '-300px'
   });
 
   sr.reveal('.card-2', {
     duration: 3000,
-    origin: 'left',
+    origin: 'top',
     distance: '-300px'
   });
 
   sr.reveal('.card-3', {
     duration: 3500,
-    origin: 'rigth',
+    origin: 'top',
     distance: '-300px'
   });
 
   sr.reveal('.card-4', {
     duration: 3500,
-    origin: 'left',
+    origin: 'top',
     distance: '-300px'
   });
 
   sr.reveal('.card-5', {
     duration: 4000,
-    origin: 'rigth',
+    origin: 'top',
     distance: '-300px'
   });
 
   sr.reveal('.card-6', {
     duration: 4000,
-    origin: 'left',
+    origin: 'top',
     distance: '-300px'
   });
 
@@ -145,12 +145,12 @@ window.sr = ScrollReveal();
 
   sr.reveal('.testimonials .testimonio-1', {
     duration: 2000,
-    origin: 'left',
+    origin: 'top',
     distance: '-300px'
   });
 
   sr.reveal('.testimonials .testimonio-2', {
     duration: 2500,
-    origin: 'left',
+    origin: 'top',
     distance: '-300px'
   });
